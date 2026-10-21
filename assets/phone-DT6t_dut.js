@@ -1,0 +1,1 @@
+function e(e){let t=e.replace(/\D/g,``);t.startsWith(`380`)?t=t.slice(3):t.startsWith(`0`)&&(t=t.slice(1)),t=t.slice(0,9);let n=[t.slice(0,2),t.slice(2,5),t.slice(5,7),t.slice(7,9)],r=`+380`;return n[0]&&(r+=` (${n[0]}`),n[0].length===2&&(r+=`)`),n[1]&&(r+=` ${n[1]}`),n[2]&&(r+=`-${n[2]}`),n[3]&&(r+=`-${n[3]}`),r}export{e as t};
